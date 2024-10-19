@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Combustível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="questao_14.html">Comprimento da Palavra</a></li>
+            <li><a href="questao_20.html">Valor do Terreno</a></li>
+        </ul>
+    </nav>
+
+    <h1>Calcule o Gasto de Combustível</h1>
+    <form>
+        <label for="distancia">Distância a percorrer (km):</label>
+        <input type="number" id="distancia" required><br><br>
+
+        <label for="precoCombustivel">Preço do combustível (R$/litro):</label>
+        <input type="number" step="0.01" id="precoCombustivel" required><br><br>
+
+        <button type="button" onclick="calcularGasto()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
